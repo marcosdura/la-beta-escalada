@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>La Beta Escalada | Muro de Escalada Deportiva en Montevideo, Uruguay</title>
+<link rel="icon" type="image/png" href="assets/logo-beta.png">
+<link rel="apple-touch-icon" href="assets/logo-beta.png">
+<meta name="description" content="La Beta Escalada: muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles. Visitanos en Chaná 2240.">
+<meta name="keywords" content="escalada Uruguay, escalada deportiva Uruguay, escalada Montevideo, muro de escalada Montevideo, rocódromo Montevideo, climbing gym Uruguay, sport climbing Uruguay, La Beta Escalada">
+<meta name="robots" content="index, follow">
+<meta name="author" content="La Beta Escalada">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_UY">
+<meta property="og:site_name" content="La Beta Escalada">
+<meta property="og:title" content="La Beta Escalada | Muro de Escalada Deportiva en Montevideo, Uruguay">
+<meta property="og:description" content="Muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles. Chaná 2240, Montevideo.">
+<meta property="og:image" content="assets/logo-beta.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="La Beta Escalada | Muro de Escalada Deportiva en Montevideo, Uruguay">
+<meta name="twitter:description" content="Muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles.">
+<meta name="twitter:image" content="assets/logo-beta.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "La Beta Escalada",
+  "description": "Muro de escalada deportiva en Montevideo, Uruguay. Escalada con cuerda para todos los niveles.",
+  "image": "assets/logo-beta.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Chaná 2240",
+    "addressLocality": "Montevideo",
+    "postalCode": "11200",
+    "addressCountry": "UY"
+  },
+  "sameAs": ["https://www.instagram.com/labeta.escalada/"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "18"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "19:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "19:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "19:00", "closes": "23:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "18:00" }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Barlow+Condensed:wght@400;500;600;700&amp;family=Barlow:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  body { margin: 0; }
+  a { color: #E8611C; text-decoration: none; }
+  a:hover { color: #ff7a2e; }
+  @keyframes labeta-breathe {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.055); }
+  }
+  @keyframes labeta-c1 {
+    0%,5%   { opacity: 0; transform: translateY(10px) scale(0.82); }
+    12%,88% { opacity: 1; transform: translateY(0) scale(1); }
+    97%,100%{ opacity: 0; transform: translateY(-8px) scale(0.82); }
+  }
+  @keyframes labeta-c2 {
+    0%,26%  { opacity: 0; transform: translateY(10px) scale(0.82); }
+    33%,88% { opacity: 1; transform: translateY(0) scale(1); }
+    97%,100%{ opacity: 0; transform: translateY(-8px) scale(0.82); }
+  }
+  @keyframes labeta-c3 {
+    0%,46%  { opacity: 0; transform: translateY(10px) scale(0.82); }
+    53%,88% { opacity: 1; transform: translateY(0) scale(1); }
+    97%,100%{ opacity: 0; transform: translateY(-8px) scale(0.82); }
+  }
+  @keyframes labeta-c4 {
+    0%,66%  { opacity: 0; transform: translateY(10px) scale(0.82); }
+    73%,88% { opacity: 1; transform: translateY(0) scale(1); }
+    97%,100%{ opacity: 0; transform: translateY(-8px) scale(0.82); }
+  }
+  @keyframes labeta-arrow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(7px); }
+  }
+
+  @media (max-width: 640px) {
+    .lb-topcluster { width: clamp(260px,78vw,380px) !important; align-items: center !important; align-self: center !important; text-align: center; margin-top: clamp(20px,8vh,70px); }
+    .lb-logo { width: clamp(130px,34vw,170px) !important; height: clamp(130px,34vw,170px) !important; }
+    .lb-elems-row { width: clamp(200px,58vw,280px) !important; }
+    .lb-elem-icon { width: clamp(38px,10vw,48px) !important; height: clamp(38px,10vw,48px) !important; }
+    .lb-headline { text-align: center !important; width: clamp(250px,65vw,340px) !important; font-size: clamp(38px,10vw,52px) !important; margin-top: clamp(16px,3.5vw,28px) !important; }
+    .lb-gradient-diag { background: linear-gradient(100deg, rgba(20,12,6,0.85) 0%, rgba(20,12,6,0.68) 60%, rgba(20,12,6,0.4) 88%, rgba(20,12,6,0.4) 100%) !important; }
+  }
+
+  @media (min-width: 641px) {
+    .lb-hero, .lb-info-section { padding-left: clamp(56px,14vw,144px) !important; padding-right: clamp(56px,14vw,144px) !important; }
+  }
+</style>
+</helmet>
+<div style="width:100%; font-family:'Barlow',system-ui,sans-serif; color:#171310;">
+
+  <!-- ============ HERO ============ -->
+  <section class="lb-hero" style="position:relative; width:100%; height:100vh; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; padding:clamp(20px,4.5vw,40px) clamp(32px,8vw,84px);">
+    <img src="uploads/pasted-1784210238471-0.png" alt="Muro de escalada La Beta" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center;">
+    <div class="lb-gradient-diag" style="position:absolute; inset:0; background:linear-gradient(100deg, rgba(20,12,6,0.82) 0%, rgba(20,12,6,0.55) 42%, rgba(20,12,6,0.15) 70%, rgba(20,12,6,0.35) 100%);"></div>
+    <div style="position:absolute; left:0; right:0; bottom:0; height:260px; z-index:1; background:linear-gradient(to top, rgba(20,12,6,0.88) 0%, rgba(20,12,6,0.45) 55%, rgba(20,12,6,0) 100%);"></div>
+
+    <!-- top-left cluster -->
+    <div class="lb-topcluster" style="position:relative; z-index:2; display:flex; flex-direction:column; align-items:flex-start; gap:clamp(12px,1.8vw,18px); width:clamp(140px,18vw,230px); flex:none;">
+      <!-- logo (breathing) -->
+      <div class="lb-logo" style="width:clamp(110px,15vw,210px); height:clamp(110px,15vw,210px); border-radius:50%; overflow:hidden; border:4px solid #a83f0d; box-shadow:0 20px 46px rgba(0,0,0,0.45); animation:labeta-breathe 4.6s ease-in-out infinite; transform-origin:center; transition:border-color .25s ease, box-shadow .25s ease;" style-hover="border-color:#7d2e08; box-shadow:0 22px 56px rgba(168,63,13,0.55);">
+        <img src="assets/logo-beta.png" alt="Logo La Beta Escalada" style="width:100%; height:100%; object-fit:cover; object-position:center 35%;">
+      </div>
+
+      <!-- climbing elements loading in sequence (left to right) -->
+      <div class="lb-elems-row" style="display:flex; align-items:center; justify-content:space-between; width:clamp(140px,18vw,230px);">
+        <sc-for list="{{ elementos }}" as="el" hint-placeholder-count="4">
+          <div class="lb-elem-icon" title="{{ el.name }}" style="width:clamp(26px,3.6vw,44px); height:clamp(26px,3.6vw,44px); display:flex; align-items:center; justify-content:center; opacity:0; animation:{{ el.anim }} 4.6s ease-in-out infinite;"><img src="{{ el.img }}" alt="{{ el.name }}" style="width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 5px 12px rgba(0,0,0,0.45));"></div>
+        </sc-for>
+      </div>
+
+      <!-- headline -->
+      <h1 class="lb-headline" style="margin: clamp(8px,1.5vw,14px) 0 0; font-family: 'Anton',sans-serif; font-weight: 400; text-transform: uppercase; line-height: 1.04; font-size: clamp(28px,5.2vw,58px); letter-spacing: 0.01em; color: #fff; text-shadow: 0 4px 24px rgba(0,0,0,0.5); width: clamp(210px, 39vw, 430px);">Vení a escalar<br><span style="color:#E8611C;">a La Beta</span></h1>
+
+      <!-- pill (debajo del título, con bandera) -->
+      <div style="display:inline-flex; align-items:center; gap:clamp(4px,0.7vw,6px); padding:clamp(3px,0.6vw,5px) clamp(8px,1.3vw,11px); margin-top:clamp(-8px,-0.8vw,-4px); border-radius:999px; background:rgba(232,97,28,0.16); border:1.5px solid rgba(232,97,28,0.7); backdrop-filter:blur(6px);">
+        <span style="width:6px; height:6px; border-radius:50%; background:#E8611C; box-shadow:0 0 0 3px rgba(232,97,28,0.25); flex:none;"></span>
+        <span style="font-family:'Barlow',sans-serif; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; font-size:clamp(9.5px,1vw,11px); color:#ffe9d8;">Montevideo, Uruguay</span>
+        <svg viewBox="0 0 30 20" style="display:block; flex:none; width:clamp(12px,1.35vw,15px); height:clamp(8px,0.9vw,10px);" role="img" aria-label="Bandera de Uruguay">
+          <rect x="0" y="0" width="30" height="20" fill="#fff"/>
+          <rect x="13" y="2.222" width="17" height="2.222" fill="#0038A8"/>
+          <rect x="13" y="6.667" width="17" height="2.222" fill="#0038A8"/>
+          <rect x="0" y="11.111" width="30" height="2.222" fill="#0038A8"/>
+          <rect x="0" y="15.556" width="30" height="2.222" fill="#0038A8"/>
+          <g stroke="#F4B942" stroke-width="0.9" stroke-linecap="round">
+            <line x1="8.40" y1="5.56" x2="9.50" y2="5.56"/>
+            <line x1="7.84" y1="6.90" x2="8.62" y2="7.68"/>
+            <line x1="6.50" y1="7.46" x2="6.50" y2="8.56"/>
+            <line x1="5.16" y1="6.90" x2="4.38" y2="7.68"/>
+            <line x1="4.60" y1="5.56" x2="3.50" y2="5.56"/>
+            <line x1="5.16" y1="4.22" x2="4.38" y2="3.44"/>
+            <line x1="6.50" y1="3.66" x2="6.50" y2="2.56"/>
+            <line x1="7.84" y1="4.22" x2="8.62" y2="3.44"/>
+          </g>
+          <circle cx="6.5" cy="5.56" r="1.7" fill="#F4B942" stroke="#8a5a12" stroke-width="0.3"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- bottom bar -->
+    <div style="position:relative; z-index:2; display:flex; flex-direction:column; gap:clamp(10px,1.6vw,14px); flex:none;">
+      <!-- fila 1: botones -->
+      <div style="display:flex; align-items:center; gap:clamp(8px,1.4vw,12px); flex-wrap:wrap;">
+        <!-- instagram -->
+        <a href="https://www.instagram.com/labeta.escalada/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:clamp(6px,0.9vw,8px); padding:clamp(8px,1.4vw,11px) clamp(13px,2.2vw,18px); border-radius:12px; background:#E8611C; border:1px solid rgba(255,255,255,0.55); color:#fff; font-family:'Barlow',sans-serif; font-weight:600; letter-spacing:0.01em; font-size:clamp(11.5px,1.4vw,14px); box-shadow:0 8px 22px rgba(232,97,28,0.35); transition:transform .2s ease, box-shadow .2s ease, background .2s ease; white-space:nowrap;" style-hover="background:#ff7526; transform:translateY(-2px); box-shadow:0 12px 28px rgba(232,97,28,0.5);">
+          <span style="font-size:1.1em;">📸</span> Escribinos por Instagram <span style="font-size:1em;">→</span>
+        </a>
+        <!-- como llegar -->
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Chan%C3%A1%202240%2C%2011200%20Montevideo" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:clamp(6px,0.9vw,8px); padding:clamp(8px,1.4vw,11px) clamp(13px,2.2vw,18px); border-radius:12px; background:#fff; border:1px solid #fff; color:#E8611C; font-family:'Barlow',sans-serif; font-weight:600; letter-spacing:0.01em; font-size:clamp(11.5px,1.4vw,14px); box-shadow:0 8px 20px rgba(0,0,0,0.2); transition:transform .2s ease, box-shadow .2s ease; white-space:nowrap;" style-hover="transform:translateY(-2px); box-shadow:0 12px 28px rgba(0,0,0,0.3);">
+          <span style="font-size:1.1em;">📍</span> Como llegar <span style="font-size:1em;">→</span>
+        </a>
+      </div>
+
+      <!-- fila 2: rating (izq) + mas info (der) -->
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+        <!-- rating -->
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=La%20Beta%20Escalada%20Chan%C3%A1%202240%20Montevideo" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:clamp(6px,1vw,10px); padding:8px 6px 8px 0;">
+          <span style="font-family:'Anton',sans-serif; font-size:clamp(17px,2.2vw,22px); color:#fff; line-height:1;">5.0</span>
+          <span style="display:flex; flex-direction:column; line-height:1.15;">
+            <span style="color:#FFC02E; font-size:clamp(10px,1.2vw,13px); letter-spacing:2px;">★★★★★</span>
+            <span style="color:#d9cec6; font-family:'Barlow',sans-serif; font-size:clamp(9.5px,1.1vw,12px); letter-spacing:0.02em; white-space:nowrap;">18 opiniones en Google</span>
+          </span>
+        </a>
+
+        <!-- mas info -->
+        <a href="#labeta-info" style="display:inline-flex; flex-direction:column; align-items:center; gap:5px; padding:8px 0; color:#fff; font-family:'Barlow',sans-serif; font-weight:500; text-transform:uppercase; letter-spacing:0.08em; font-size:clamp(10.5px,1.2vw,13px); opacity:0.9; transition:opacity .2s ease, transform .2s ease;" style-hover="opacity:1; transform:translateY(-2px);">
+          Más info
+          <span style="font-size:clamp(15px,1.8vw,19px); line-height:1; animation:labeta-arrow 1.8s ease-in-out infinite;">↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INFO / MAPA / HORARIOS ============ -->
+  <section id="labeta-info" class="lb-info-section" style="background:#f7f3ef; padding:clamp(30px,6vw,64px) clamp(32px,8vw,84px);">
+    <div style="max-width:1080px; margin:0 auto;">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
+        <span style="width:28px; height:3px; background:#E8611C; border-radius:2px; flex:none;"></span>
+        <span style="font-family:'Barlow',sans-serif; font-weight:600; text-transform:uppercase; letter-spacing:0.18em; font-size:clamp(11px,1.15vw,13px); color:#E8611C;">Dónde y cuándo</span>
+      </div>
+      <h2 style="margin:0 0 clamp(16px,2.6vw,30px); font-family:'Anton',sans-serif; font-weight:400; text-transform:uppercase; font-size:clamp(22px,3.8vw,40px); letter-spacing:0.01em; color:#171310;">Visitanos en La Beta</h2>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:clamp(14px,2.2vw,22px); align-items:stretch;">
+        <!-- mapa -->
+        <div style="border-radius:16px; overflow:hidden; min-height:clamp(200px,26vw,320px); box-shadow:0 18px 50px rgba(0,0,0,0.12); background:#e6ded6;">
+          <iframe title="Mapa La Beta Escalada" src="https://www.google.com/maps?q=Chan%C3%A1%202240%2C%2011200%20Montevideo&amp;output=embed" style="width:100%; height:100%; min-height:200px; border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- info card -->
+        <div style="display:flex; flex-direction:column; gap:14px;">
+          <div style="background:#fff; border-radius:16px; padding:clamp(15px,2vw,21px) clamp(14px,2.1vw,23px); box-shadow:0 12px 34px rgba(0,0,0,0.07);">
+            <div style="display:flex; align-items:flex-start; gap:12px;">
+              <span style="font-size:clamp(15px,1.7vw,19px);">📍</span>
+              <div>
+                <div style="font-family:'Barlow',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; font-size:clamp(11px,1.1vw,13px); color:#E8611C;">Dirección</div>
+                <div style="font-size:clamp(13px,1.4vw,15.5px); font-weight:500; margin-top:3px;">Chaná 2240, 11200 Montevideo</div>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Chan%C3%A1%202240%2C%2011200%20Montevideo" target="_blank" rel="noopener" style="display:inline-block; margin-top:7px; font-family:'Barlow',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; font-size:clamp(11px,1.1vw,13px);">Abrir en Google Maps →</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:#fff; border-radius:16px; padding:clamp(15px,2vw,21px) clamp(14px,2.1vw,23px); box-shadow:0 12px 34px rgba(0,0,0,0.07); flex:1;">
+            <div style="display:flex; align-items:center; gap:9px; margin-bottom:13px;">
+              <span style="font-size:clamp(14px,1.6vw,17.5px);">🕑</span>
+              <span style="font-family:'Barlow',sans-serif; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; font-size:clamp(11.5px,1.2vw,14px); color:#171310;">Horarios</span>
+            </div>
+            <sc-for list="{{ horarios }}" as="h" hint-placeholder-count="7">
+              <div style="display:flex; align-items:baseline; justify-content:space-between; gap:16px; padding:7px 0; border-top:1px solid #eee7df;">
+                <span style="font-family:'Barlow',sans-serif; font-weight:600; text-transform:capitalize; font-size:clamp(12px,1.3vw,14.5px); color:#171310;">{{ h.dia }}</span>
+                <span style="font-size:clamp(11.5px,1.25vw,13.5px); color:{{ h.color }}; text-align:right; font-weight:500;">{{ h.hora }}</span>
+              </div>
+            </sc-for>
+            <p style="margin:11px 0 0; font-size:clamp(10px,1vw,11.5px); color:#8a8078; font-style:italic;">Los horarios pueden variar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="background:#171310; color:#f3ede6; padding:clamp(28px,5vw,48px) clamp(32px,8vw,84px) clamp(18px,3vw,24px);">
+    <div style="max-width:1080px; margin:0 auto; display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between; gap:22px;">
+      <div style="display:flex; flex-direction:column; gap:7px;">
+        <div style="font-family:'Anton',sans-serif; font-weight:400; text-transform:uppercase; letter-spacing:0.01em; font-size:clamp(19px,2.4vw,23px); color:#fff;">La Beta<span style="color:#E8611C;"> Escalada</span></div>
+        <div style="font-family:'Barlow',sans-serif; font-size:13.5px; color:#b7ab9e;">Chaná 2240, 11200 Montevideo, Uruguay</div>
+      </div>
+
+      <a href="https://www.instagram.com/labeta.escalada/" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; padding:10px 16px; border-radius:11px; background:rgba(232,97,28,0.14); border:1px solid rgba(232,97,28,0.5); color:#f3ede6; font-family:'Barlow',sans-serif; font-weight:600; font-size:14px; transition:background .2s ease, border-color .2s ease;" style-hover="background:rgba(232,97,28,0.25); border-color:rgba(232,97,28,0.8);">
+        <span style="font-size:16px;">📸</span> @labeta.escalada
+      </a>
+    </div>
+
+    <div style="max-width:1080px; margin:clamp(18px,3vw,26px) auto 0; padding-top:16px; border-top:1px solid rgba(255,255,255,0.12); display:flex; flex-wrap:wrap; gap:8px; justify-content:space-between; font-family:'Barlow',sans-serif; font-size:12.5px; color:#8a8078;">
+      <span>© 2026 La Beta Escalada. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const elementos = [
+      { name: "Cuerda y mosquetón", img: "uploads/climbing (1).png", anim: "labeta-c1" },
+      { name: "Casco", img: "uploads/climbing (3).png", anim: "labeta-c2" },
+      { name: "Zapatillas de escalada", img: "uploads/climbing-shoes (1).png", anim: "labeta-c3" },
+      { name: "Escalador", img: "uploads/climbing (2).png", anim: "labeta-c4" },
+    ];
+    const CLOSED = "#b64a2a";
+    const horarios = [
+      { dia: "Jueves", hora: "Cerrado", color: CLOSED },
+      { dia: "Viernes", hora: "7 – 11 p.m.", color: "#171310" },
+      { dia: "Sábado", hora: "12 – 6 p.m.", color: "#171310" },
+      { dia: "Domingo", hora: "Cerrado", color: CLOSED },
+      { dia: "Lunes", hora: "7 – 11 p.m.", color: "#171310" },
+      { dia: "Martes", hora: "Cerrado", color: CLOSED },
+      { dia: "Miércoles", hora: "7 – 11 p.m.", color: "#171310" },
+    ];
+    return { elementos, horarios };
+  }
+}
+</script>
+</body>
+</html>
